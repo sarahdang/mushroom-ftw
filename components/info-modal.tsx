@@ -85,19 +85,11 @@ export function InfoModal({ isOpen, onClose }: InfoModalProps) {
           {activeTab === "what" && (
             <div className="space-y-6">
               <p className="text-foreground font-mono leading-relaxed">
-                Mushroom Garden is a whimsical exploration of fungi, featuring cute kawaii-style mushrooms scattered across a lush forest floor.
+                welcome to my mushroom garden!!! these are some fun mushrooms that I've been learning about over the past little while.
               </p>
 
-              <div className="relative bg-muted/30 border border-border rounded-lg overflow-hidden">
-                <div className="aspect-video flex items-center justify-center">
-                  <div className="text-center p-8">
-                    <p className="text-4xl font-bold text-foreground/80 font-sans">Have Fun!</p>
-                  </div>
-                </div>
-              </div>
-
               <p className="text-foreground font-mono leading-relaxed text-sm">
-                Click and drag to explore the garden. Click on any mushroom to learn more about it. If you want to see them grow again, restart the sprout.
+                click and drag to explore the garden :~) if you want to see them grow again, click the button on the bottom left!
               </p>
             </div>
           )}
@@ -105,7 +97,7 @@ export function InfoModal({ isOpen, onClose }: InfoModalProps) {
           {activeTab === "how" && (
             <div className="space-y-6">
               <p className="text-foreground font-mono leading-relaxed">
-                The garden is built with care and attention to detail, using modern web technologies to bring these charming fungi to life.
+                I built this on Vercel and Replit!!! a fun little project so I could (partially) learn how to vibe code.
               </p>
 
               <div className="space-y-4">
@@ -124,54 +116,6 @@ export function InfoModal({ isOpen, onClose }: InfoModalProps) {
                   <p className="font-mono text-sm text-foreground/80">Use the Restart Sprout button to watch all the mushrooms grow from the ground again.</p>
                 </div>
               </div>
-            </div>
-          )}
-
-          {activeTab === "why" && (
-            <div className="space-y-6">
-              <p className="text-foreground font-mono leading-relaxed">
-                Mushrooms are magical. They connect forests underground, break down the old to make way for the new, and remind us that beauty often grows in unexpected places.
-              </p>
-
-              <div className="relative bg-muted/30 border border-border rounded-lg overflow-hidden p-6">
-                <blockquote className="font-mono text-foreground/80 italic text-center">
-                  &quot;The mushroom is the elf of plants, at evening it is not, at morning in a truffled hut it stands upon the spot.&quot;
-                </blockquote>
-                <p className="font-mono text-sm text-foreground/60 text-center mt-4">— Emily Dickinson</p>
-              </div>
-
-              <p className="text-foreground font-mono leading-relaxed text-sm">
-                This garden was created to bring a moment of calm and wonder. In our busy digital world, sometimes we need a quiet forest to wander through.
-              </p>
-            </div>
-          )}
-
-          {activeTab === "who" && (
-            <div className="space-y-6">
-              <p className="text-foreground font-mono leading-relaxed">
-                Mushroom Garden was crafted with love by a team of fungi enthusiasts and pixel pushers.
-              </p>
-
-              <div className="space-y-4">
-                <div className="border border-border rounded-lg p-4">
-                  <h3 className="font-mono font-bold text-foreground mb-1">Design & Development</h3>
-                  <p className="font-mono text-sm text-foreground/80">Built with Next.js, Tailwind CSS, and a sprinkle of woodland magic.</p>
-                </div>
-
-                <div className="border border-border rounded-lg p-4">
-                  <h3 className="font-mono font-bold text-foreground mb-1">Inspiration</h3>
-                  <p className="font-mono text-sm text-foreground/80">Kawaii mushroom art, forest walks, and the quiet wisdom of mycelium networks.</p>
-                </div>
-
-                <div className="border border-border rounded-lg p-4">
-                  <h3 className="font-mono font-bold text-foreground mb-1">Special Thanks</h3>
-                  <p className="font-mono text-sm text-foreground/80">To the mushrooms themselves, for being endlessly fascinating little organisms.</p>
-                </div>
-              </div>
-
-              <p className="text-foreground font-mono leading-relaxed text-sm text-center">
-                Made with care, 2026
-              </p>
             </div>
           )}
         </div>
