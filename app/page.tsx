@@ -253,28 +253,44 @@ export default function MushroomGarden() {
       {/* Forest background */}
       <ForestBackground />
 
-      {/* Sticky title - top right */}
-      <div className="fixed top-5 right-5 z-50">
-        <div className="bg-card border-2 border-foreground shadow-[3px_3px_0px_0px] shadow-foreground px-4 py-2">
-          <h1 className="font-sans text-sm font-bold text-foreground tracking-wide uppercase">Magical Mushroom Forest</h1>
-        </div>
+      {/* Sticky top-left text */}
+      <div className="fixed top-8 left-8 z-50 max-w-sm">
+        <p className="font-sans text-xs leading-relaxed text-[#d1ccae]/90 uppercase">
+          Last November, I took a quick trip back home to Vancouver where I did a fun mushroom foraging workshop. We went around UBC Spirit Park and spent the morning learning about different types of mushrooms. This site is a way for me to retain the knowledge that I learnt in a fun and whimsical way!!! 🍄✨🍄✨🍄🌟
+        </p>
       </div>
 
-      {/* Restart sprout button - bottom left */}
+      {/* Sticky title - centered background */}
+      <div className="fixed inset-0 flex items-center justify-center pointer-events-none z-0">
+        <h1 className="font-serif text-6xl md:text-8xl text-[#d1ccae]/20 italic">
+          Sarah's mushroom garden
+        </h1>
+      </div>
+
+      {/* LEARN MORE - top right */}
+      <div className="fixed top-8 right-8 z-50">
+        <button
+          onClick={() => setIsInfoOpen(true)}
+          className="font-sans text-xs font-bold text-[#d1ccae] tracking-widest uppercase hover:opacity-70 transition-opacity"
+        >
+          LEARN MORE
+        </button>
+      </div>
+
+      {/* RESTART SPROUT - bottom left */}
       <button
         onClick={handleRestartSprout}
-        className="fixed bottom-5 left-5 z-50 bg-card border-2 border-foreground shadow-[3px_3px_0px_0px] shadow-foreground px-4 py-2 font-sans text-xs font-bold text-foreground tracking-wide hover:bg-muted transition-colors active:translate-x-[2px] active:translate-y-[2px] active:shadow-[1px_1px_0px_0px] uppercase"
+        className="fixed bottom-8 left-8 z-50 font-sans text-xs font-bold text-[#d1ccae] tracking-widest hover:opacity-70 transition-opacity uppercase"
       >
-        Sprout Again
+        RESTART SPROUT
       </button>
 
-      {/* Info button - bottom right */}
-      <button
-        onClick={() => setIsInfoOpen(true)}
-        className="fixed bottom-5 right-5 z-50 bg-card border-2 border-foreground shadow-[3px_3px_0px_0px] shadow-foreground px-4 py-2 font-sans text-xs font-bold text-foreground tracking-wide hover:bg-muted transition-colors active:translate-x-[2px] active:translate-y-[2px] active:shadow-[1px_1px_0px_0px] uppercase"
-      >
-        Discover More
-      </button>
+      {/* COPYRIGHT - bottom right */}
+      <div className="fixed bottom-8 right-8 z-50">
+        <p className="font-sans text-xs font-bold text-[#d1ccae] tracking-widest uppercase">
+          © 2026 SARAH DANG
+        </p>
+      </div>
 
       {/* Info modal */}
       <InfoModal isOpen={isInfoOpen} onClose={() => setIsInfoOpen(false)} />

@@ -1,32 +1,16 @@
 import React from "react"
 import type { Metadata } from 'next'
-import { Nunito } from 'next/font/google'
+import { Inter, Playfair_Display } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
-const _nunito = Nunito({ subsets: ["latin"], weight: ["400", "600", "700", "800"] });
+const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
+const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-serif", style: "italic" });
 
 export const metadata: Metadata = {
-  title: 'Mushroom Garden',
+  title: 'Sarah\'s Mushroom Garden',
   description: 'A cozy, whimsical mushroom garden experience',
   generator: 'v0.app',
-  icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/apple-icon.png',
-  },
 }
 
 export default function RootLayout({
@@ -35,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
       <body className={`font-sans antialiased`}>
         {children}
         <Analytics />
