@@ -255,14 +255,14 @@ export default function MushroomGarden() {
 
       {/* Sticky top-left text */}
       <div className="fixed top-8 left-8 z-50 max-w-sm">
-        <p className="font-sans text-xs leading-relaxed text-[#d1ccae]/90 uppercase">
+        <p className="font-sans text-xs leading-relaxed text-[var(--color-bluebell)]/90 uppercase">
           Last November, I took a quick trip back home to Vancouver where I did a fun mushroom foraging workshop. We went around UBC Spirit Park and spent the morning learning about different types of mushrooms. This site is a way for me to retain the knowledge that I learnt in a fun and whimsical way!!! 🍄✨🍄✨🍄🌟
         </p>
       </div>
 
       {/* Sticky title - centered background */}
       <div className="fixed inset-0 flex items-center justify-center pointer-events-none z-0">
-        <h1 className="font-serif text-6xl md:text-8xl text-[#d1ccae]/20 italic">
+        <h1 className="font-serif text-6xl md:text-8xl text-[var(--color-bluebell)]/10 italic">
           Sarah's mushroom garden
         </h1>
       </div>
@@ -271,7 +271,7 @@ export default function MushroomGarden() {
       <div className="fixed top-8 right-8 z-50">
         <button
           onClick={() => setIsInfoOpen(true)}
-          className="font-sans text-xs font-bold text-[#d1ccae] tracking-widest uppercase hover:opacity-70 transition-opacity"
+          className="font-sans text-xs font-bold text-[var(--color-bluebell)] tracking-widest uppercase hover:text-[var(--color-berry)] transition-colors"
         >
           LEARN MORE
         </button>
@@ -280,14 +280,14 @@ export default function MushroomGarden() {
       {/* RESTART SPROUT - bottom left */}
       <button
         onClick={handleRestartSprout}
-        className="fixed bottom-8 left-8 z-50 font-sans text-xs font-bold text-[#d1ccae] tracking-widest hover:opacity-70 transition-opacity uppercase"
+        className="fixed bottom-8 left-8 z-50 font-sans text-xs font-bold text-[var(--color-bluebell)] tracking-widest hover:text-[var(--color-berry)] transition-colors uppercase"
       >
         RESTART SPROUT
       </button>
 
       {/* COPYRIGHT - bottom right */}
       <div className="fixed bottom-8 right-8 z-50">
-        <p className="font-sans text-xs font-bold text-[#d1ccae] tracking-widest uppercase">
+        <p className="font-sans text-xs font-bold text-[var(--color-bluebell)] tracking-widest uppercase">
           © 2026 SARAH DANG
         </p>
       </div>
