@@ -256,24 +256,24 @@ export default function MushroomGarden() {
       {/* Sticky title - top right */}
       <div className="fixed top-5 right-5 z-50">
         <div className="bg-card border-2 border-foreground shadow-[3px_3px_0px_0px] shadow-foreground px-4 py-2">
-          <h1 className="font-mono text-sm font-bold text-foreground tracking-wide">MUSHROOM GARDEN</h1>
+          <h1 className="font-sans text-sm font-bold text-foreground tracking-wide uppercase">Magical Mushroom Forest</h1>
         </div>
       </div>
 
       {/* Restart sprout button - bottom left */}
       <button
         onClick={handleRestartSprout}
-        className="fixed bottom-5 left-5 z-50 bg-card border-2 border-foreground shadow-[3px_3px_0px_0px] shadow-foreground px-4 py-2 font-mono text-sm font-bold text-foreground tracking-wide hover:bg-muted transition-colors active:translate-x-[2px] active:translate-y-[2px] active:shadow-[1px_1px_0px_0px]"
+        className="fixed bottom-5 left-5 z-50 bg-card border-2 border-foreground shadow-[3px_3px_0px_0px] shadow-foreground px-4 py-2 font-sans text-xs font-bold text-foreground tracking-wide hover:bg-muted transition-colors active:translate-x-[2px] active:translate-y-[2px] active:shadow-[1px_1px_0px_0px] uppercase"
       >
-        RESTART SPROUT
+        Sprout Again
       </button>
 
       {/* Info button - bottom right */}
       <button
         onClick={() => setIsInfoOpen(true)}
-        className="fixed bottom-5 right-5 z-50 bg-card border-2 border-foreground shadow-[3px_3px_0px_0px] shadow-foreground px-4 py-2 font-mono text-sm font-bold text-foreground tracking-wide hover:bg-muted transition-colors active:translate-x-[2px] active:translate-y-[2px] active:shadow-[1px_1px_0px_0px]"
+        className="fixed bottom-5 right-5 z-50 bg-card border-2 border-foreground shadow-[3px_3px_0px_0px] shadow-foreground px-4 py-2 font-sans text-xs font-bold text-foreground tracking-wide hover:bg-muted transition-colors active:translate-x-[2px] active:translate-y-[2px] active:shadow-[1px_1px_0px_0px] uppercase"
       >
-        INFO
+        Discover More
       </button>
 
       {/* Info modal */}
