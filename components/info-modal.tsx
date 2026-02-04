@@ -3,7 +3,7 @@
 import { X } from "lucide-react"
 import { useEffect, useState } from "react"
 
-type TabType = "what" | "how" | "why" | "who"
+type TabType = "what" | "how"
 
 interface InfoModalProps {
   isOpen: boolean
@@ -99,23 +99,6 @@ export function InfoModal({ isOpen, onClose }: InfoModalProps) {
               <p className="text-foreground font-mono leading-relaxed">
                 I built this on Vercel and Replit!!! a fun little project so I could (partially) learn how to vibe code.
               </p>
-
-              <div className="space-y-4">
-                <div className="border border-border rounded-lg p-4">
-                  <h3 className="font-mono font-bold text-foreground mb-2">Explore</h3>
-                  <p className="font-mono text-sm text-foreground/80">Click and drag anywhere on the screen to pan around the garden. The forest extends in all directions!</p>
-                </div>
-
-                <div className="border border-border rounded-lg p-4">
-                  <h3 className="font-mono font-bold text-foreground mb-2">Discover</h3>
-                  <p className="font-mono text-sm text-foreground/80">Click on any mushroom to reveal its name, species, and a fun fact. Each mushroom has its own personality!</p>
-                </div>
-
-                <div className="border border-border rounded-lg p-4">
-                  <h3 className="font-mono font-bold text-foreground mb-2">Restart</h3>
-                  <p className="font-mono text-sm text-foreground/80">Use the Restart Sprout button to watch all the mushrooms grow from the ground again.</p>
-                </div>
-              </div>
             </div>
           )}
         </div>
