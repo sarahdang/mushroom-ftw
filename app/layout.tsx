@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-serif", style: "italic" });
 
 export const metadata: Metadata = {
-  title: 'Sarah\'s Mushroom Garden',
+  title: 'Sarah\'s mushroom garden ⋆.ೃ࿔.𖥔˖*:･༄ 𖦹🍄🌟',
   description: 'A cozy, whimsical mushroom garden experience',
   generator: 'v0.app',
 }
