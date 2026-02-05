@@ -262,7 +262,7 @@ export default function MushroomGarden() {
               Welcome to my mushroom garden!!! These are some fun mushrooms that I've been learning about over the past little while.
             </p>
             <p className="font-sans text-xs leading-relaxed text-[var(--color-white)]/90">
-              Click and drag to explore the garden :~) if you want to see them grow again, click the button on the bottom left!
+              Click and drag to explore the garden :~) if you want to see them grow again, click "RESTART SPROUT" on the bottom left!
             </p>
           </div>
         </div>
