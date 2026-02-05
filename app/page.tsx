@@ -239,7 +239,7 @@ export default function MushroomGarden() {
       {/* Sticky top-left text*/}
       <div className="fixed top-20 left-8 z-50 max-w-sm space-y-4">
        <p className="font-sans text-xs leading-relaxed text-[var(--color-white)]/90">
-          Last November, I took a quick trip back home to Vancouver where I participated in a mushroom foraging class. We walked around UBC's Pacific Spirit Park and I learnt about several different types of mushrooms. This site is a way for me to retain the knowledge that I learnt in a fun and whimsical way!!! ⋆.ೃ࿔.𖥔 ݁ ˖*:･༄ 𖦹🍄🌟
+          Last November, I took a quick trip back home to Vancouver where I participated in a mushroom foraging class. We walked around UBC's Pacific Spirit Park and I learnt about several different types of mushrooms. This site is a way for me to retain the knowledge that I learnt in a fun and whimsical way!!! ⋆.ೃ࿔.𖥔˖*:･༄ 𖦹🍄🌟
         </p>
       </div>
 
