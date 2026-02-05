@@ -50,7 +50,7 @@ export function InfoModal({ isOpen, onClose }: InfoModalProps) {
             </p>
 
             <p className="text-foreground font-sans leading-relaxed text-sm">
-              Click and drag to explore the garden :~) if you want to see them grow again, click the button on the bottom left!
+              Click and drag to explore the garden :~) if you want to see them grow again, click "RESTART SPROUT" on the bottom left!
             </p>
           </div>
         </div>
