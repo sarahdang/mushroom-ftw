@@ -52,10 +52,6 @@ export function InfoModal({ isOpen, onClose }: InfoModalProps) {
             <p className="text-foreground font-sans leading-relaxed text-sm">
               Click and drag to explore the garden :~) if you want to see them grow again, click the button on the bottom left!
             </p>
-
-            <p className="text-foreground font-sans leading-relaxed text-sm">
-              Last November, I took a quick trip back home to Vancouver where I did a fun mushroom foraging workshop. We went around UBC Spirit Park and spent the morning learning about different types of mushrooms. This site is a way for me to retain the knowledge that I learnt in a fun and whimsical way!!! 🍄✨🍄✨🍄🌟
-            </p>
           </div>
         </div>
       </div>
