@@ -284,7 +284,7 @@ export default function MushroomGarden() {
       {/* COPYRIGHT - bottom right */}
       <div className="fixed bottom-8 right-8 z-50">
         <p className="font-sans text-xs font-bold text-[var(--color-bluebell)] tracking-widest uppercase">
-          © 2026 <a href="https://www.sarahdang.com">SARAH DANG</a>
+          © 2026 <a href="https://www.sarahdang.com" className="underline underline-offset-4 hover:text-[var(--color-berry)] transition-colors">SARAH DANG</a>
         </p>
       </div>
 
@@ -324,20 +324,28 @@ export default function MushroomGarden() {
           ${selectedMushroom ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8 pointer-events-none"}
         `}
       >
-        <Card className="bg-card/95 backdrop-blur-md border-border/50 shadow-2xl max-w-md mx-4">
-          <CardContent className="p-5 pr-12 relative">
-            <button
-              onClick={closePanel}
-              className="absolute top-3 right-3 p-1 rounded-full hover:bg-muted transition-colors text-foreground/60 hover:text-foreground"
-              aria-label="Close info panel"
-            >
-              <X className="w-5 h-5" />
-            </button>
-            <h2 className="text-xl font-bold text-foreground">{selectedMushroom?.name}</h2>
-            <p className="text-muted-foreground text-sm mt-1">{selectedMushroom?.description}</p>
-            <p className="text-foreground/80 text-sm mt-3 leading-relaxed">{selectedMushroom?.fact}</p>
-          </CardContent>
-        </Card>
+        <div className="bg-[#abbc49] border border-[#d1ccae]/30 shadow-2xl max-w-lg w-[90vw] md:w-[500px] rounded-[40px] p-8 pr-12 relative overflow-hidden">
+          <button
+            onClick={closePanel}
+            className="absolute top-6 right-6 p-1 rounded-full hover:bg-black/5 transition-colors text-[#3d2b2b]"
+            aria-label="Close info panel"
+          >
+            <X className="w-6 h-6" />
+          </button>
+          
+          <h2 className="text-4xl font-serif italic text-[#3d2b2b] leading-tight">
+            {selectedMushroom?.name}
+          </h2>
+          <p className="text-[#a54747] font-sans text-sm mt-1 uppercase tracking-wider">
+            {selectedMushroom?.description}
+          </p>
+          
+          <div className="mt-6">
+            <p className="text-[#3d2b2b] font-sans text-base leading-relaxed">
+              {selectedMushroom?.fact}
+            </p>
+          </div>
+        </div>
       </div>
 
       
