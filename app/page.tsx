@@ -237,7 +237,7 @@ export default function MushroomGarden() {
       </div>
 
       {/* Sticky top-left text*/}
-      <div className="fixed top-18 left-8 z-50 max-w-sm space-y-4">
+      <div className="fixed top-20 left-8 z-50 max-w-sm space-y-4">
        <p className="font-sans text-xs leading-relaxed text-[var(--color-bluebell)]/90">
           Last November, I took a quick trip back home to Vancouver where I participated in a mushroom foraging class. We walked around UBC's Pacific Spirit Park and spent the morning learning about different types of mushrooms. This site is a way for me to retain the knowledge that I learnt in a fun and whimsical way!!! ⋆.ೃ࿔.𖥔 ݁ ˖*:･༄ 𖦹🍄🌟
         </p>
@@ -278,7 +278,7 @@ export default function MushroomGarden() {
 
       {/* COPYRIGHT - bottom right */}
       <div className="fixed bottom-8 right-8 z-50">
-        <p className="font-sans text-xs font-bold text-[var(--color-white)] tracking-widest">
+        <p className="font-sans text-xs leading-relaxed text-[var(--color-white)]/100">
           Made with love by <a href="https://www.sarahdang.com" className="underline underline-offset-4 hover:text-[var(--color-berry)] transition-colors">Sarah Dang</a> © 2026
         </p>
       </div>
