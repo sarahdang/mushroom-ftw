@@ -247,7 +247,7 @@ export default function MushroomGarden() {
       <div className="fixed top-8 right-8 z-50 text-right">
         <button
           onClick={() => setIsInfoOpen(!isInfoOpen)}
-          className="font-sans text-xs font-bold text-[var(--color-bluebell)] tracking-widest uppercase hover:text-[var(--color-berry)] transition-colors"
+          className="font-sans text-xs font-bold text-[var(--color-white)] tracking-widest uppercase hover:text-[var(--color-berry)] transition-colors"
         >
           {isInfoOpen ? "CLOSE" : "LEARN MORE"}
         </button>
