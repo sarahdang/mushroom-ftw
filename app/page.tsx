@@ -231,9 +231,7 @@ export default function MushroomGarden() {
 
       {/* Sticky top-left title */}
       <div className="fixed top-8 left-8 z-50 space-y-4">
-        <h1 className="font-serif text-3xl md:text-4xl text-[var(--color-white)]/50 italic">
-          Sarah's mushroom garden
-        </h1>
+        <Image>public/Sarah’s mushroom garden.png</Image>
       </div>
 
       {/* Sticky top-left text*/}
