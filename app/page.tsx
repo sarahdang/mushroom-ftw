@@ -264,13 +264,31 @@ export default function MushroomGarden() {
       </div>
 
       {/* LEARN MORE - top right */}
-      <div className="fixed top-8 right-8 z-50">
+      <div className="fixed top-8 right-8 z-50 text-right">
         <button
-          onClick={() => setIsInfoOpen(true)}
+          onClick={() => setIsInfoOpen(!isInfoOpen)}
           className="font-sans text-xs font-bold text-[var(--color-bluebell)] tracking-widest uppercase hover:text-[var(--color-berry)] transition-colors"
         >
-          LEARN MORE
+          {isInfoOpen ? "CLOSE" : "LEARN MORE"}
         </button>
+        <div 
+          className={`
+            mt-4 max-w-xs transition-all duration-500 ease-in-out overflow-hidden
+            ${isInfoOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}
+          `}
+        >
+          <div className="space-y-4 p-4 bg-[var(--color-espresso)]/40 rounded-lg backdrop-blur-sm border border-[var(--color-bluebell)]/10">
+            <p className="text-[var(--color-bluebell)] font-sans text-[10px] leading-relaxed uppercase text-left">
+              Welcome to my mushroom garden!!! These are some fun mushrooms that I've been learning about over the past little while.
+            </p>
+            <p className="text-[var(--color-bluebell)] font-sans text-[10px] leading-relaxed uppercase text-left">
+              Click and drag to explore the garden :~) if you want to see them grow again, click the button on the bottom left!
+            </p>
+            <p className="text-[var(--color-bluebell)] font-sans text-[10px] leading-relaxed uppercase text-left">
+              Last November, I took a quick trip back home to Vancouver where I did a fun mushroom foraging workshop. We went around UBC Spirit Park and spent the morning learning about different types of mushrooms. This site is a way for me to retain the knowledge that I learnt in a fun and whimsical way!!! 🍄✨🍄✨🍄🌟
+            </p>
+          </div>
+        </div>
       </div>
 
       {/* RESTART SPROUT - bottom left */}
@@ -287,9 +305,6 @@ export default function MushroomGarden() {
           © 2026 <a href="https://www.sarahdang.com" className="underline underline-offset-4 hover:text-[var(--color-berry)] transition-colors">SARAH DANG</a>
         </p>
       </div>
-
-      {/* Info modal */}
-      <InfoModal isOpen={isInfoOpen} onClose={() => setIsInfoOpen(false)} />
 
       {/* Mushrooms scattered across the garden */}
       <div className="relative z-10 min-w-[200vw] min-h-[200vh]">
