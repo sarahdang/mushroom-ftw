@@ -278,8 +278,8 @@ export default function MushroomGarden() {
 
       {/* COPYRIGHT - bottom right */}
       <div className="fixed bottom-8 right-8 z-50">
-        <p className="font-sans text-xs font-bold text-[var(--color-bluebell)] tracking-widest uppercase">
-          © 2026 <a href="https://www.sarahdang.com" className="underline underline-offset-4 hover:text-[var(--color-berry)] transition-colors">SARAH DANG</a>
+        <p className="font-sans text-xs font-bold text-[var(--color-white)] tracking-widest">
+          Made with love by <a href="https://www.sarahdang.com" className="underline underline-offset-4 hover:text-[var(--color-berry)] transition-colors">Sarah Dang</a> © 2026
         </p>
       </div>
 
