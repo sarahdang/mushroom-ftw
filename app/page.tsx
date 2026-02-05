@@ -230,7 +230,7 @@ export default function MushroomGarden() {
       <ForestBackground />
 
       {/* Sticky top-left text and title */}
-      <div className="fixed top-8 left-8 z-50 space-y-4">
+      <div className="fixed top-8 left-8 z-50 max-w-sm space-y-4">
         <h1 className="font-serif text-3xl md:text-4xl text-[var(--color-bluebell)]/40 italic">
           Sarah's mushroom garden
         </h1>
