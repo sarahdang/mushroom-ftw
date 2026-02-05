@@ -247,7 +247,7 @@ export default function MushroomGarden() {
       <div className="fixed top-8 right-8 z-50 text-right">
         <button
           onClick={() => setIsInfoOpen(!isInfoOpen)}
-          className="font-sans text-xs font-bold text-[var(--color-white)] tracking-widest uppercase hover:text-[var(--color-berry)] transition-colors"
+          className="font-sans text-xs font-bold text-[var(--color-white)] tracking-widest uppercase hover:text-[var(--color-white)]/50 transition-colors"
         >
           {isInfoOpen ? "CLOSE" : "LEARN MORE"}
         </button>
@@ -271,7 +271,7 @@ export default function MushroomGarden() {
       {/* RESTART SPROUT - bottom left */}
       <button
         onClick={handleRestartSprout}
-        className="fixed bottom-8 left-8 z-50 font-sans text-xs font-bold text-[var(--color-white)] tracking-widest hover:text-[var(--color-berry)] transition-colors uppercase"
+        className="fixed bottom-8 left-8 z-50 font-sans text-xs font-bold text-[var(--color-white)] tracking-widest hover:text-[var(--color-white)]/50 transition-colors uppercase"
       >
         RESTART SPROUT
       </button>
@@ -279,7 +279,7 @@ export default function MushroomGarden() {
       {/* COPYRIGHT - bottom right */}
       <div className="fixed bottom-8 right-8 z-50">
         <p className="font-sans text-xs leading-relaxed text-[var(--color-white)]/90">
-          Made with love from <a href="https://www.sarahdang.com" className="underline underline-offset-4 hover:text-[var(--color-berry)] transition-colors">Sarah</a> © 2026
+          Made with love from <a href="https://www.sarahdang.com" className="underline underline-offset-4 hover:text-[var(--color-white)]/50 transition-colors">Sarah</a> © 2026
         </p>
       </div>
 
