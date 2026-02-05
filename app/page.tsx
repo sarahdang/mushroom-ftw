@@ -21,147 +21,123 @@ interface MushroomData {
 const mushrooms: MushroomData[] = [
   {
     variant: "amanita",
-    name: "Fly Agaric",
-    description: "The iconic red-capped mushroom",
-    fact: "Despite its fairy tale appearance, this mushroom has been used in traditional ceremonies across many cultures for thousands of years.",
+    name: "fly agaric",
+    description: "the iconic red-capped mushroom",
+    fact: "despite its fairy tale appearance, this mushroom has been used in traditional ceremonies across many cultures for thousands of years",
     position: { x: 8, y: 10 },
     size: "lg"
   },
   {
     variant: "chanterelle",
-    name: "Golden Chanterelle",
-    description: "A prized culinary treasure",
-    fact: "These golden beauties smell faintly of apricots and are beloved by chefs around the world for their delicate, peppery flavor.",
+    name: "golden chanterelle",
+    description: "yummmmmy",
+    fact: "commonly featured in dishes like creamy risotto, pasta with parmesan, sautéed on toast, or omelets",
     position: { x: 35, y: 5 },
     size: "md"
   },
   {
     variant: "porcini",
-    name: "King Bolete",
-    description: "The mushroom royalty",
-    fact: "Known as 'porcini' in Italy, these meaty mushrooms can grow incredibly large - some specimens weigh over 2 pounds!",
+    name: "king bolete",
+    description: "aka porcinis",
+    fact: "these meaty mushrooms can grow incredibly large - some specimens weigh over 2 pounds!",
     position: { x: 65, y: 12 },
     size: "lg"
   },
   {
     variant: "oyster",
-    name: "Oyster Mushroom",
-    description: "Delicate shelf dweller",
-    fact: "These mushrooms are nature's recyclers - they can break down pollutants and have even been used to clean up oil spills!",
+    name: "pleurotus ostreatus",
+    description: "delicate shelf dweller",
+    fact: "popular edible mushroom found in temperate and subtropical forests around the world. these look funny :3",
     position: { x: 88, y: 8 },
     size: "md"
   },
   {
     variant: "morel",
     name: "Morel",
-    description: "The honeycomb hunter's prize",
-    fact: "Morel hunters guard their secret spots fiercely! These elusive mushrooms can sell for over $50 per pound when in season.",
+    description: "funny looking things",
+    fact: "expensive but yummy mushrooms!",
     position: { x: 18, y: 32 },
     size: "md"
   },
   {
     variant: "shimeji",
-    name: "Beech Mushroom",
-    description: "A clustered family",
-    fact: "These sociable mushrooms always grow in groups. In Japan, they symbolize prosperity and are given as gifts for good fortune.",
+    name: "beech mushroom",
+    description: "often known as Shimeji or clamshell mushrooms",
+    fact: "these mushrooms always grow in groups. they kill in a bibimpbap",
     position: { x: 50, y: 28 },
     size: "sm"
   },
   {
     variant: "enoki",
-    name: "Enoki",
-    description: "Delicate snow puffs",
-    fact: "Wild enoki look completely different from cultivated ones! In nature, they have brown caps and shorter stems.",
+    name: "enoki",
+    description: "flammulina filiformis",
+    fact: "GOATED MUSHROOMS!!! widely cultivated as an edible mushroom in East Asia and kills especially in hotpot",
     position: { x: 78, y: 35 },
     size: "md"
   },
   {
     variant: "button",
-    name: "Button Mushroom",
-    description: "The friendly familiar",
-    fact: "This humble mushroom is actually the same species as cremini and portobello - just harvested at different stages of growth!",
+    name: "button mushroom",
+    description: "most common mushroom variety",
+    fact: "this humble mushroom is actually the same species as cremini and portobello - just harvested at different stages of growth!",
     position: { x: 5, y: 55 },
     size: "sm"
   },
   {
     variant: "honey",
-    name: "Honey Fungus",
-    description: "The forest giant",
-    fact: "One honey fungus in Oregon spans 2,385 acres and is estimated to be 2,400 years old - making it one of the largest organisms on Earth!",
+    name: "honey fungus",
+    description: "the forest giant",
+    fact: "one honey fungus in Oregon spans 2,385 acres and is estimated to be 2,400 years old - making it one of the largest organisms on Earth",
     position: { x: 30, y: 52 },
     size: "lg"
   },
   {
     variant: "coral",
-    name: "Pink Coral",
-    description: "Soft and blushing",
-    fact: "Despite looking like ocean coral, these pretty pink mushrooms grow on forest floors and are completely terrestrial.",
+    name: "pink coral",
+    description: "ramaria botrytis",
+    fact: "looks like ocean coral :O",
     position: { x: 58, y: 48 },
     size: "md"
   },
   {
     variant: "parasol",
-    name: "Parasol Mushroom",
-    description: "The elegant umbrella",
-    fact: "These graceful giants can grow up to 16 inches tall! Foragers prize them for their delicious, meat-like texture when cooked.",
+    name: "parasol mushroom",
+    description: "macrolepiota procera",
+    fact: "found solitary or in groups and fairy rings in pastures and occasionally in woodland",
     position: { x: 85, y: 55 },
     size: "lg"
   },
   {
     variant: "truffle",
-    name: "Black Truffle",
-    description: "Underground treasure",
-    fact: "Truffles can cost up to $3,000 per pound! Specially trained pigs and dogs are used to sniff out these buried delicacies.",
+    name: "black truffle",
+    description: "another yummy mushroom",
+    fact: "I just love anything truffle",
     position: { x: 12, y: 75 },
     size: "sm"
   },
   {
-    variant: "amanita",
-    name: "Forest Jewel",
-    description: "A spotted beauty",
-    fact: "The compounds in this mushroom have inspired scientists researching treatments for various neurological conditions.",
-    position: { x: 42, y: 72 },
-    size: "md"
-  },
-  {
-    variant: "chanterelle",
-    name: "Summer Gold",
-    description: "Sunshine in mushroom form",
-    fact: "Chanterelles form special relationships with trees - they trade nutrients in a partnership that benefits the entire forest.",
-    position: { x: 70, y: 78 },
-    size: "sm"
-  },
-  {
     variant: "button",
-    name: "Meadow Button",
-    description: "A classic favorite",
-    fact: "These versatile mushrooms are grown in more than 70 countries and make up about 40% of all mushrooms consumed globally.",
+    name: "meadow button",
+    description: "a classic",
+    fact: "these mushrooms are grown in more than 70 countries and make up about 40% of all mushrooms consumed globally",
     position: { x: 92, y: 75 },
     size: "md"
   },
   {
     variant: "oyster",
-    name: "Pearl Oyster",
-    description: "Cascading shelves",
-    fact: "Oyster mushrooms are carnivorous! They can trap and digest tiny roundworms to supplement their nitrogen intake.",
+    name: "pearl oyster",
+    description: "cascading shelves",
+    fact: "they are carnivorous! they can trap and digest tiny roundworms to supplement their nitrogen intake :O",
     position: { x: 25, y: 88 },
     size: "lg"
   },
   {
     variant: "coral",
-    name: "Blush Cap",
-    description: "Gentle and soft",
-    fact: "The soft pink color of these mushrooms comes from natural pigments that have potential uses in textile dyeing.",
+    name: "blush cap",
+    description: "blusher",
+    fact: "the flesh of the mushroom is white and turns pink when bruised or exposed to air ^___^ how cute",
     position: { x: 55, y: 92 },
     size: "sm"
-  },
-  {
-    variant: "porcini",
-    name: "Forest Emperor",
-    description: "Majestic and bold",
-    fact: "In some European countries, foraging for porcini is regulated - you need a license and can only pick a certain amount per day!",
-    position: { x: 82, y: 90 },
-    size: "md"
   },
 ]
 
