@@ -3,16 +3,12 @@
 import { X } from "lucide-react"
 import { useEffect, useState } from "react"
 
-type TabType = "what" | "how"
-
-interface InfoModalProps {
+type InfoModalProps = {
   isOpen: boolean
   onClose: () => void
 }
 
 export function InfoModal({ isOpen, onClose }: InfoModalProps) {
-  const [activeTab, setActiveTab] = useState<TabType>("what")
-
   // Prevent body scroll when modal is open
   useEffect(() => {
     if (isOpen) {
@@ -25,21 +21,7 @@ export function InfoModal({ isOpen, onClose }: InfoModalProps) {
     }
   }, [isOpen])
 
-  // Reset to first tab when modal opens
-  useEffect(() => {
-    if (isOpen) {
-      setActiveTab("what")
-    }
-  }, [isOpen])
-
   if (!isOpen) return null
-
-  const tabs: { id: TabType; label: string }[] = [
-    { id: "what", label: "WHAT?" },
-    { id: "how", label: "HOW?" },
-    { id: "why", label: "WHY?" },
-    { id: "who", label: "WHO?" },
-  ]
 
   return (
     <div className="fixed inset-0 z-[100] flex items-center justify-center">
@@ -62,45 +44,19 @@ export function InfoModal({ isOpen, onClose }: InfoModalProps) {
 
         {/* Content */}
         <div className="p-8">
-          {/* Tabs navigation */}
-          <div className="flex gap-6 mb-6 font-mono text-sm">
-            {tabs.map((tab) => (
-              <button
-                key={tab.id}
-                onClick={() => setActiveTab(tab.id)}
-                className={`
-                  transition-colors pb-1
-                  ${activeTab === tab.id 
-                    ? "text-foreground font-bold border-b-2 border-foreground" 
-                    : "text-foreground/40 hover:text-foreground/60"
-                  }
-                `}
-              >
-                {tab.label}
-              </button>
-            ))}
+          <div className="space-y-6">
+            <p className="text-foreground font-sans leading-relaxed">
+              Welcome to my mushroom garden!!! These are some fun mushrooms that I've been learning about over the past little while.
+            </p>
+
+            <p className="text-foreground font-sans leading-relaxed text-sm">
+              Click and drag to explore the garden :~) if you want to see them grow again, click the button on the bottom left!
+            </p>
+
+            <p className="text-foreground font-sans leading-relaxed text-sm">
+              Last November, I took a quick trip back home to Vancouver where I did a fun mushroom foraging workshop. We went around UBC Spirit Park and spent the morning learning about different types of mushrooms. This site is a way for me to retain the knowledge that I learnt in a fun and whimsical way!!! 🍄✨🍄✨🍄🌟
+            </p>
           </div>
-
-          {/* Tab content */}
-          {activeTab === "what" && (
-            <div className="space-y-6">
-              <p className="text-foreground font-mono leading-relaxed">
-                welcome to my mushroom garden!!! these are some fun mushrooms that I've been learning about over the past little while.
-              </p>
-
-              <p className="text-foreground font-mono leading-relaxed text-sm">
-                click and drag to explore the garden :~) if you want to see them grow again, click the button on the bottom left!
-              </p>
-            </div>
-          )}
-
-          {activeTab === "how" && (
-            <div className="space-y-6">
-              <p className="text-foreground font-mono leading-relaxed">
-                I built this on Vercel and Replit!!! a fun little project so I could (partially) learn how to vibe code.
-              </p>
-            </div>
-          )}
         </div>
       </div>
     </div>
