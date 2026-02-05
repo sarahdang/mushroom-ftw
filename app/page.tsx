@@ -230,12 +230,12 @@ export default function MushroomGarden() {
       <ForestBackground />
 
       {/* Sticky top-left text and title */}
-      <div className="fixed top-8 left-8 z-50 max-w-sm space-y-4">
+      <div className="fixed top-8 left-8 z-60 max-w-sm space-y-4">
         <h1 className="font-serif text-3xl md:text-4xl text-[var(--color-bluebell)]/40 italic">
           Sarah's mushroom garden
         </h1>
         <p className="font-sans text-xs leading-relaxed text-[var(--color-bluebell)]/90">
-          Last November, I took a quick trip back home to Vancouver where I did a fun mushroom foraging workshop. We went around UBC Spirit Park and spent the morning learning about different types of mushrooms. This site is a way for me to retain the knowledge that I learnt in a fun and whimsical way!!! 🍄✨🍄✨🍄🌟
+          Last November, I took a quick trip back home to Vancouver where I participated in a mushroom foraging class. We walked around UBC's Pacific Spirit Park and spent the morning learning about different types of mushrooms. This site is a way for me to retain the knowledge that I learnt in a fun and whimsical way!!! ⋆.ೃ࿔.𖥔 ݁ ˖*:･༄ 𖦹🍄🌟
         </p>
       </div>
 
