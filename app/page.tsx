@@ -278,14 +278,11 @@ export default function MushroomGarden() {
           `}
         >
           <div className="space-y-4 p-4 bg-[var(--color-espresso)]/40 rounded-lg backdrop-blur-sm border border-[var(--color-bluebell)]/10">
-            <p className="text-[var(--color-bluebell)] font-sans text-[10px] leading-relaxed uppercase text-left">
+            <p className="font-sans text-xs leading-relaxed text-[var(--color-bluebell)]/90">
               Welcome to my mushroom garden!!! These are some fun mushrooms that I've been learning about over the past little while.
             </p>
-            <p className="text-[var(--color-bluebell)] font-sans text-[10px] leading-relaxed uppercase text-left">
+            <p className="font-sans text-xs leading-relaxed text-[var(--color-bluebell)]/90">
               Click and drag to explore the garden :~) if you want to see them grow again, click the button on the bottom left!
-            </p>
-            <p className="text-[var(--color-bluebell)] font-sans text-[10px] leading-relaxed uppercase text-left">
-              Last November, I took a quick trip back home to Vancouver where I did a fun mushroom foraging workshop. We went around UBC Spirit Park and spent the morning learning about different types of mushrooms. This site is a way for me to retain the knowledge that I learnt in a fun and whimsical way!!! 🍄✨🍄✨🍄🌟
             </p>
           </div>
         </div>
