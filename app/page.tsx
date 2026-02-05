@@ -231,7 +231,7 @@ export default function MushroomGarden() {
 
       {/* Sticky top-left title */}
       <div className="fixed top-8 left-8 z-50 space-y-4">
-        <h1 className="font-serif text-3xl md:text-4xl text-[var(--color-bluebell)]/40 italic">
+        <h1 className="font-serif text-3xl md:text-4xl text-[var(--color-white)]/50 italic">
           Sarah's mushroom garden
         </h1>
       </div>
@@ -257,11 +257,11 @@ export default function MushroomGarden() {
             ${isInfoOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}
           `}
         >
-          <div className="space-y-4 p-4 bg-[var(--color-espresso)]/40 rounded-lg backdrop-blur-sm border border-[var(--color-bluebell)]/10">
-            <p className="font-sans text-xs leading-relaxed text-[var(--color-bluebell)]/90">
+          <div className="space-y-4 p-4 bg-[var(--color-espresso)]/40 rounded-lg backdrop-blur-sm border border-[var(--color-white)]/10">
+            <p className="font-sans text-xs leading-relaxed text-[var(--color-white)]/90">
               Welcome to my mushroom garden!!! These are some fun mushrooms that I've been learning about over the past little while.
             </p>
-            <p className="font-sans text-xs leading-relaxed text-[var(--color-bluebell)]/90">
+            <p className="font-sans text-xs leading-relaxed text-[var(--color-white)]/90">
               Click and drag to explore the garden :~) if you want to see them grow again, click the button on the bottom left!
             </p>
           </div>
@@ -271,7 +271,7 @@ export default function MushroomGarden() {
       {/* RESTART SPROUT - bottom left */}
       <button
         onClick={handleRestartSprout}
-        className="fixed bottom-8 left-8 z-50 font-sans text-xs font-bold text-[var(--color-bluebell)] tracking-widest hover:text-[var(--color-berry)] transition-colors uppercase"
+        className="fixed bottom-8 left-8 z-50 font-sans text-xs font-bold text-[var(--color-white)] tracking-widest hover:text-[var(--color-berry)] transition-colors uppercase"
       >
         RESTART SPROUT
       </button>
