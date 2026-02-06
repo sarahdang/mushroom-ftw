@@ -18,6 +18,7 @@ interface MushroomProps {
   className?: string
   style?: React.CSSProperties
   size?: "sm" | "md" | "lg"
+  image?: string
 }
 
 const mushroomColors: Record<MushroomVariant, { cap: string; stem: string; spots?: string; details?: string }> = {
@@ -91,7 +92,7 @@ const sizeClasses = {
   lg: "w-32 h-44"
 }
 
-export function Mushroom({ variant, name, isSelected, onClick, className, style, size = "md" }: MushroomProps) {
+export function Mushroom({ variant, name, isSelected, onClick, className, style, size = "md", image }: MushroomProps) {
   const colors = mushroomColors[variant]
 
   return (
@@ -112,13 +113,16 @@ export function Mushroom({ variant, name, isSelected, onClick, className, style,
       {isSelected && (
         <div
           className="absolute inset-0 -m-4 rounded-full animate-glow-soft"
-          style={{ backgroundColor: colors.cap, opacity: 0.3 }}
+          style={{ backgroundColor: image ? "#ffffff" : colors.cap, opacity: 0.3 }}
         />
       )}
 
-      <svg viewBox="0 0 100 130" className="w-full h-full drop-shadow-md">
-        {/* Different mushroom shapes based on variant */}
-        {variant === "amanita" && (
+      {image ? (
+        <img src={image} alt={name} className="w-full h-full object-contain drop-shadow-md" />
+      ) : (
+        <svg viewBox="0 0 100 130" className="w-full h-full drop-shadow-md">
+          {/* Different mushroom shapes based on variant */}
+          {variant === "amanita" && (
           <>
             {/* Stem */}
             <path

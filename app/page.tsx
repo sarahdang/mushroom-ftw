@@ -16,6 +16,7 @@ interface MushroomData {
   fact: string
   position: { x: number; y: number }
   size: "sm" | "md" | "lg"
+  image?: string
 }
 
 const mushrooms: MushroomData[] = [
@@ -138,6 +139,24 @@ const mushrooms: MushroomData[] = [
     fact: "the flesh of the mushroom is white and turns pink when bruised or exposed to air ^___^ how cute",
     position: { x: 55, y: 92 },
     size: "sm"
+  },
+  {
+    variant: "amanita",
+    name: "horny mushroom",
+    description: "a spicy little guy",
+    fact: "this mushroom seems to have a lot of personality! looks like it's from a pixelated world.",
+    position: { x: 45, y: 60 },
+    size: "md",
+    image: "/horny_mushroom.png"
+  },
+  {
+    variant: "amanita",
+    name: "super mushroom",
+    description: "makes you big",
+    fact: "found in many pipes and blocks across the mushroom kingdom. very iconic!",
+    position: { x: 75, y: 85 },
+    size: "md",
+    image: "/mario_mushroom.png"
   },
 ]
 
@@ -297,19 +316,20 @@ export default function MushroomGarden() {
             }}
           >
             <div className="relative group">
-              <Mushroom
-                variant={mushroom.variant}
-                name={mushroom.name}
-                description={mushroom.description}
-                size={mushroom.size}
-                isSelected={selectedMushroom?.name === mushroom.name && selectedMushroom?.position.x === mushroom.position.x}
-                onClick={() => handleMushroomClick(mushroom)}
-              />
-              
-              {/* Inline mushroom info panel - appears next to the mushroom */}
-              {selectedMushroom?.name === mushroom.name && selectedMushroom?.position.x === mushroom.position.x && (
-                <div className="absolute left-full ml-4 top-1/2 -translate-y-1/2 z-[60] w-64 pointer-events-auto">
-                  <div className="space-y-3 p-4 bg-[var(--color-espresso)]/80 rounded-lg backdrop-blur-md border border-[var(--color-bluebell)]/20 shadow-xl animate-grow-in text-left">
+                <Mushroom
+                  variant={mushroom.variant}
+                  name={mushroom.name}
+                  description={mushroom.description}
+                  size={mushroom.size}
+                  image={mushroom.image}
+                  isSelected={selectedMushroom?.name === mushroom.name && selectedMushroom?.position.x === mushroom.position.x}
+                  onClick={() => handleMushroomClick(mushroom)}
+                />
+                
+                {/* Inline mushroom info panel - appears next to the mushroom */}
+                {selectedMushroom?.name === mushroom.name && selectedMushroom?.position.x === mushroom.position.x && (
+                  <div className="absolute left-full ml-12 top-1/2 -translate-y-1/2 z-[60] w-64 pointer-events-auto">
+                    <div className="space-y-3 p-4 bg-[var(--color-espresso)]/80 rounded-lg backdrop-blur-md border border-[var(--color-bluebell)]/20 shadow-xl animate-grow-in text-left">
                     <div className="flex justify-between items-start">
                       <h2 className="text-xl font-serif italic text-[var(--color-bluebell)] leading-tight">
                         {mushroom.name}
