@@ -333,9 +333,17 @@ export default function MushroomGarden() {
                   <div className="absolute left-full ml-12 top-1/2 -translate-y-1/2 z-[60] w-64 pointer-events-auto">
                     <div className="space-y-3 p-4 bg-[var(--color-espresso)]/40 rounded-lg backdrop-blur-sm border border shadow-xl animate-grow-in text-left">
                     <div className="flex justify-between items-start">
-                      <h2 className="text-xl font-sans font-bold text-white leading-tight">
-                        {mushroom.name}
-                      </h2>
+                      {mushroom.name === "horny mushroom" ? (
+                        <img 
+                          src="/horny_mushroom_title.png" 
+                          alt="horny mushroom" 
+                          className="h-8 w-auto object-contain brightness-0 invert"
+                        />
+                      ) : (
+                        <h2 className="text-xl font-sans font-bold text-white leading-tight">
+                          {mushroom.name}
+                        </h2>
+                      )}
                       <button
                         onClick={(e) => {
                           e.stopPropagation();
@@ -346,12 +354,14 @@ export default function MushroomGarden() {
                         <X className="w-4 h-4" />
                       </button>
                     </div>
-                    <p className="text-white/80 font-sans text-xs tracking-wider">
-                      {mushroom.description}
-                    </p>
-                    <p className="text-white font-sans text-xs leading-relaxed">
-                      {mushroom.fact}
-                    </p>
+                    <div className="-space-y-1">
+                      <p className="text-white/80 font-sans text-xs tracking-wider">
+                        {mushroom.description}
+                      </p>
+                      <p className="text-white font-sans text-xs leading-relaxed">
+                        {mushroom.fact}
+                      </p>
+                    </div>
                   </div>
                 </div>
               )}
