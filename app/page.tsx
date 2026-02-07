@@ -338,7 +338,7 @@ export default function MushroomGarden() {
                         <img 
                           src="/horny_mushroom_title.png" 
                           alt="horny mushroom" 
-                          className="h-8 w-auto object-contain brightness-0 invert"
+                          className="h-8 w-auto object-contain brightness-0 invert mr-2"
                         />
                       ) : (
                         <h2 className="text-xl font-sans font-bold text-white leading-tight">
