@@ -253,9 +253,11 @@ export default function MushroomGarden() {
         <img 
           src="/title.png" 
           alt="Sarah's mushroom garden" 
-          className="h-12 md:h-16 w-auto object-contain"
-          //style={{ filter: 'brightness(0) saturate(100%) invert(81%) sepia(9%) saturate(464%) hue-rotate(182deg) brightness(88%) contrast(87%)' }}
-        />
+          className="h-12 md:h-16 w-auto object-contain"        />
+      </div>
+
+      {/* Sticky top-left description */}
+      <div className="fixed top-18 left-8 z-50 space-y-4 pointer-events-none">
         <p className="font-sans text-xs leading-relaxed text-[var(--color-white)] pointer-events-auto max-w-sm">
           Last November, I took a quick trip back home to Vancouver where I participated in a mushroom foraging class. We walked around UBC's Pacific Spirit Park and I learnt about several different types of mushrooms. This site is a way for me to retain the knowledge that I learnt in a fun and whimsical way!!! ⋆.ೃ࿔.𖥔˖*:･༄ 𖦹🍄🌟
         </p>
@@ -339,15 +341,15 @@ export default function MushroomGarden() {
                           e.stopPropagation();
                           closePanel();
                         }}
-                        className="text-white/60 hover:text-white transition-colors"
+                        className="text-white hover:text-white transition-colors"
                       >
                         <X className="w-4 h-4" />
                       </button>
                     </div>
-                    <p className="text-white/80 font-sans text-[10px] uppercase tracking-wider">
+                    <p className="text-white/80 font-sans text-xs tracking-wider">
                       {mushroom.description}
                     </p>
-                    <p className="text-white font-sans text-[10px] leading-relaxed">
+                    <p className="text-white font-sans text-xs leading-relaxed">
                       {mushroom.fact}
                     </p>
                   </div>
