@@ -254,9 +254,9 @@ export default function MushroomGarden() {
           src="/title.png" 
           alt="Sarah's mushroom garden" 
           className="h-12 md:h-16 w-auto object-contain"
-          style={{ filter: 'brightness(0) saturate(100%) invert(81%) sepia(9%) saturate(464%) hue-rotate(182deg) brightness(88%) contrast(87%)' }}
+          //style={{ filter: 'brightness(0) saturate(100%) invert(81%) sepia(9%) saturate(464%) hue-rotate(182deg) brightness(88%) contrast(87%)' }}
         />
-        <p className="font-sans text-xs leading-relaxed text-[var(--color-bluebell)]/90 pointer-events-auto max-w-sm">
+        <p className="font-sans text-xs leading-relaxed text-[var(--color-white)] pointer-events-auto max-w-sm">
           Last November, I took a quick trip back home to Vancouver where I participated in a mushroom foraging class. We walked around UBC's Pacific Spirit Park and I learnt about several different types of mushrooms. This site is a way for me to retain the knowledge that I learnt in a fun and whimsical way!!! ⋆.ೃ࿔.𖥔˖*:･༄ 𖦹🍄🌟
         </p>
       </div>
@@ -265,7 +265,7 @@ export default function MushroomGarden() {
       <div className="fixed top-8 right-8 z-50 text-right">
         <button
           onClick={() => setIsInfoOpen(!isInfoOpen)}
-          className="font-sans text-xs font-bold text-[var(--color-bluebell)] tracking-widest uppercase hover:text-[var(--color-berry)] transition-colors"
+          className="font-sans text-xs font-bold text-[var(--color-white)] tracking-widest uppercase hover:text-[var(--color-white)]/50 transition-colors"
         >
           {isInfoOpen ? "CLOSE" : "LEARN MORE"}
         </button>
@@ -275,11 +275,11 @@ export default function MushroomGarden() {
             ${isInfoOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}
           `}
         >
-          <div className="space-y-4 p-4 bg-[var(--color-espresso)]/40 rounded-lg backdrop-blur-sm border border-[var(--color-bluebell)]/10 text-left">
-            <p className="text-[var(--color-bluebell)] font-sans text-[10px] leading-relaxed uppercase">
+          <div className="space-y-4 p-4 bg-[var(--color-espresso)]/40 rounded-lg backdrop-blur-sm border text-left">
+            <p className="font-sans text-xs leading-relaxed text-[var(--color-white)] pointer-events-auto max-w-sm">
               Welcome to my mushroom garden!!! These are some fun mushrooms that I've been learning about over the past little while.
             </p>
-            <p className="text-[var(--color-bluebell)] font-sans text-[10px] leading-relaxed uppercase">
+            <p className="font-sans text-xs leading-relaxed text-[var(--color-white)] pointer-events-auto max-w-sm">
               Click and drag to explore the garden :~) if you want to see them grow again, click "RESTART SPROUT" on the bottom left!
             </p>
           </div>
@@ -289,15 +289,15 @@ export default function MushroomGarden() {
       {/* RESTART SPROUT - bottom left */}
       <button
         onClick={handleRestartSprout}
-        className="fixed bottom-8 left-8 z-50 font-sans text-xs font-bold text-[var(--color-bluebell)] tracking-widest hover:text-[var(--color-berry)] transition-colors uppercase"
+        className="fixed bottom-8 left-8 z-50 font-sans text-xs font-bold text-[var(--color-white)] tracking-widest hover:text-[var(--color-white)]/50 transition-colors uppercase"
       >
         RESTART SPROUT
       </button>
 
       {/* COPYRIGHT - bottom right */}
       <div className="fixed bottom-8 right-8 z-50">
-        <p className="font-sans text-xs font-bold text-[var(--color-bluebell)] tracking-widest uppercase">
-          Made with love from <a href="https://www.sarahdang.com" className="underline underline-offset-4 hover:text-[var(--color-berry)] transition-colors">Sarah</a> © 2026
+        <p className="font-sans text-xs leading-relaxed text-[var(--color-white)]/90 pointer-events-auto max-w-sm">
+          Made with love from <a href="https://www.sarahdang.com" className="underline underline-offset-4 hover:text-[var(--color-white)]/50 transition-colors">Sarah</a> © 2026
         </p>
       </div>
 
