@@ -347,6 +347,18 @@ export default function MushroomGarden() {
                         </h2>
                       )}
 
+                      {mushroom.name === "super mushroom" ? (
+                        <img 
+                          src="/super_mushroom_title.png" 
+                          alt="super mushroom" 
+                          className="h-8 w-auto object-contain brightness-0 invert"
+                        />
+                      ) : (
+                        <h2 className="text-xl font-sans font-bold text-white leading-tight">
+                          {mushroom.name}
+                        </h2>
+                      )}
+
                       <button
                         onClick={(e) => {
                           e.stopPropagation();
