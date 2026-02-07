@@ -296,7 +296,7 @@ export default function MushroomGarden() {
 
       {/* COPYRIGHT - bottom right */}
       <div className="fixed bottom-8 right-8 z-50">
-        <p className="font-sans text-xs leading-relaxed text-[var(--color-white)]/90 pointer-events-auto max-w-sm">
+        <p className="font-sans text-xs leading-relaxed text-[var(--color-white)] pointer-events-auto max-w-sm">
           Made with love from <a href="https://www.sarahdang.com" className="underline underline-offset-4 hover:text-[var(--color-white)]/50 transition-colors">Sarah</a> © 2026
         </p>
       </div>
