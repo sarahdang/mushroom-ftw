@@ -331,7 +331,7 @@ export default function MushroomGarden() {
                 {/* Inline mushroom info panel - appears next to the mushroom */}
                 {selectedMushroom?.name === mushroom.name && selectedMushroom?.position.x === mushroom.position.x && (
                   <div className="absolute left-full ml-12 top-1/2 -translate-y-1/2 z-[60] w-64 pointer-events-auto">
-                    <div className="space-y-3 p-4 bg-[var(--color-espresso)]/80 rounded-lg backdrop-blur-md border border-white/20 shadow-xl animate-grow-in text-left">
+                    <div className="space-y-3 p-4 bg-[var(--color-espresso)]/40 rounded-lg backdrop-blur-sm border border shadow-xl animate-grow-in text-left">
                     <div className="flex justify-between items-start">
                       <h2 className="text-xl font-sans font-bold text-white leading-tight">
                         {mushroom.name}
