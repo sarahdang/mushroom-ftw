@@ -333,6 +333,7 @@ export default function MushroomGarden() {
                   <div className="absolute left-full ml-12 top-1/2 -translate-y-1/2 z-[60] w-64 pointer-events-auto">
                     <div className="space-y-3 p-4 bg-[var(--color-espresso)]/40 rounded-lg backdrop-blur-sm border border shadow-xl animate-grow-in text-left">
                     <div className="flex justify-between items-start">
+                      
                       {mushroom.name === "horny mushroom" ? (
                         <img 
                           src="/horny_mushroom_title.png" 
@@ -344,6 +345,7 @@ export default function MushroomGarden() {
                           {mushroom.name}
                         </h2>
                       )}
+
                       <button
                         onClick={(e) => {
                           e.stopPropagation();
@@ -358,6 +360,8 @@ export default function MushroomGarden() {
                       <p className="text-white/80 font-sans text-xs tracking-wider">
                         {mushroom.description}
                       </p>
+                    </div>
+                    <div className="-space-y-5">
                       <p className="text-white font-sans text-xs leading-relaxed">
                         {mushroom.fact}
                       </p>
