@@ -333,7 +333,7 @@ export default function MushroomGarden() {
                   <div className="absolute left-full ml-12 top-1/2 -translate-y-1/2 z-[60] w-64 pointer-events-auto">
                     {/* <div className="space-y-3 p-4 bg-[var(--color-espresso)]/40 rounded-lg backdrop-blur-sm border border shadow-xl animate-grow-in text-left"> */}
                     <div className="space-y-3 p-4 pr-8 bg-[var(--color-espresso)]/40 rounded-lg backdrop-blur-sm border shadow-xl animate-grow-in text-left">
-                    <div className="flex justify-between items-start">
+                    <div className="flex justify-between items-start gap-4">
                       
                       {mushroom.name === "horny mushroom" ? (
                         <img 
@@ -362,7 +362,7 @@ export default function MushroomGarden() {
                         {mushroom.description}
                       </p>
                     </div>
-                    <div className="-space-y-5">
+                    <div className="space-y-5">
                       <p className="text-white font-sans text-xs leading-relaxed">
                         {mushroom.fact}
                       </p>
