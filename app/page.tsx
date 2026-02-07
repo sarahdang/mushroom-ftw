@@ -356,7 +356,7 @@ export default function MushroomGarden() {
                         <X className="w-4 h-4" />
                       </button>
                     </div>
-                    <div className="-space-y-1">
+                    <div className="space-y-1">
                       <p className="text-white/80 font-sans text-xs tracking-wider">
                         {mushroom.description}
                       </p>
