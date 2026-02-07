@@ -54,7 +54,7 @@ const mushrooms: MushroomData[] = [
   },
   {
     variant: "morel",
-    name: "Morel",
+    name: "morel",
     description: "funny looking things",
     fact: "expensive but yummy mushrooms!",
     position: { x: 18, y: 32 },
@@ -143,8 +143,8 @@ const mushrooms: MushroomData[] = [
   {
     variant: "amanita",
     name: "horny mushroom",
-    description: "a spicy little guy",
-    fact: "this mushroom seems to have a lot of personality! looks like it's from a pixelated world.",
+    description: "hahahh",
+    fact: "hahahhahhh",
     position: { x: 45, y: 60 },
     size: "md",
     image: "/horny_mushroom.png"
@@ -153,7 +153,7 @@ const mushrooms: MushroomData[] = [
     variant: "amanita",
     name: "super mushroom",
     description: "makes you big",
-    fact: "found in many pipes and blocks across the mushroom kingdom. very iconic!",
+    fact: "superrrr marioooo",
     position: { x: 75, y: 85 },
     size: "md",
     image: "/mario_mushroom.png"
