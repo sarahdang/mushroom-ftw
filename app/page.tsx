@@ -54,7 +54,7 @@ const mushrooms: MushroomData[] = [
   },
   {
     variant: "morel",
-    name: "morel",
+    name: "Morel",
     description: "funny looking things",
     fact: "expensive but yummy mushrooms!",
     position: { x: 18, y: 32 },
@@ -143,8 +143,8 @@ const mushrooms: MushroomData[] = [
   {
     variant: "amanita",
     name: "horny mushroom",
-    description: "hahahh",
-    fact: "hahahhahhh",
+    description: "hahahah",
+    fact: "hahahahah",
     position: { x: 45, y: 60 },
     size: "md",
     image: "/horny_mushroom.png"
@@ -153,7 +153,7 @@ const mushrooms: MushroomData[] = [
     variant: "amanita",
     name: "super mushroom",
     description: "makes you big",
-    fact: "superrrr marioooo",
+    fact: "superrr mario!!!",
     position: { x: 75, y: 85 },
     size: "md",
     image: "/mario_mushroom.png"
@@ -296,7 +296,7 @@ export default function MushroomGarden() {
 
       {/* COPYRIGHT - bottom right */}
       <div className="fixed bottom-8 right-8 z-50">
-        <p className="font-sans text-xs leading-relaxed text-[var(--color-white)] pointer-events-auto max-w-sm">
+        <p className="font-sans text-xs leading-relaxed text-[var(--color-white)]/90 pointer-events-auto max-w-sm">
           Made with love from <a href="https://www.sarahdang.com" className="underline underline-offset-4 hover:text-[var(--color-white)]/50 transition-colors">Sarah</a> © 2026
         </p>
       </div>
@@ -329,10 +329,9 @@ export default function MushroomGarden() {
                 {/* Inline mushroom info panel - appears next to the mushroom */}
                 {selectedMushroom?.name === mushroom.name && selectedMushroom?.position.x === mushroom.position.x && (
                   <div className="absolute left-full ml-12 top-1/2 -translate-y-1/2 z-[60] w-64 pointer-events-auto">
-                    <div className="space-y-3 p-4 bg-[var(--color-espresso)]/40 rounded-lg backdrop-blur-sm border-white/50 shadow-xl animate-grow-in text-left"?
-                    //bg-[var(--color-espresso)]/80 rounded-lg backdrop-blur-md border border-white/20 shadow-xl animate-grow-in text-left">
+                    <div className="space-y-3 p-4 bg-[var(--color-espresso)]/80 rounded-lg backdrop-blur-md border border-white/20 shadow-xl animate-grow-in text-left">
                     <div className="flex justify-between items-start">
-                      <h2 className="text-l font-sans text-white leading-tight">
+                      <h2 className="text-xl font-sans font-bold text-white leading-tight">
                         {mushroom.name}
                       </h2>
                       <button
@@ -345,10 +344,10 @@ export default function MushroomGarden() {
                         <X className="w-4 h-4" />
                       </button>
                     </div>
-                    <p className="font-sans text-xs text-[var(--color-white)]/80 tracking-wider">
+                    <p className="text-white/80 font-sans text-[10px] uppercase tracking-wider">
                       {mushroom.description}
                     </p>
-                    <p className="font-sans text-xs text-[var(--color-white)] leading-relaxed">
+                    <p className="text-white font-sans text-[10px] leading-relaxed">
                       {mushroom.fact}
                     </p>
                   </div>
