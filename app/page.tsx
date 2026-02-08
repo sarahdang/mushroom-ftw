@@ -105,6 +105,7 @@ const mushrooms: MushroomData[] = [
   {
     variant: "coral",
     name: "pink coral",
+    titleImage: "/pink_coral_title.png",
     description: "ramaria botrytis",
     fact: "looks like ocean coral :O",
     position: { x: 58, y: 48 },
@@ -356,7 +357,11 @@ export default function MushroomGarden() {
                         <img 
                           src={mushroom.titleImage} 
                           alt={mushroom.name} 
-                          className="h-8 w-auto object-contain brightness-0 invert"
+                          className={`
+                            w-auto object-contain brightness-0 invert
+                            ${["fly agaric", "golden chanterelle", "honey fungus", "king bolete"].includes(mushroom.name) ? 'h-12' : 'h-8'}
+                            ${["horny mushroom", "meadow button", "button mushroom", "beech mushroom"].includes(mushroom.name) ? 'mr-8' : 'mr-4'}
+                          `}
                         />
                       ) : (
                         <h2 className="text-xl font-sans font-bold text-white leading-tight">
