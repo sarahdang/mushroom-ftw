@@ -12,6 +12,7 @@ import { X } from "lucide-react"
 interface MushroomData {
   variant: MushroomVariant
   name: string
+  titleImage?: string
   description: string
   fact: string
   position: { x: number; y: number }
@@ -23,6 +24,7 @@ const mushrooms: MushroomData[] = [
   {
     variant: "amanita",
     name: "fly agaric",
+    titleImage: "/fly_agaric_title.png",
     description: "the iconic red-capped mushroom",
     fact: "despite its fairy tale appearance, this mushroom has been used in traditional ceremonies across many cultures for thousands of years",
     position: { x: 8, y: 10 },
@@ -31,6 +33,7 @@ const mushrooms: MushroomData[] = [
   {
     variant: "chanterelle",
     name: "golden chanterelle",
+    titleImage: "/golden_chanterelle_title.png",
     description: "yummmmmy",
     fact: "commonly featured in dishes like creamy risotto, pasta with parmesan, sautéed on toast, or omelets",
     position: { x: 35, y: 5 },
@@ -39,6 +42,7 @@ const mushrooms: MushroomData[] = [
   {
     variant: "porcini",
     name: "king bolete",
+    titleImage: "/king_bolete_title.png",
     description: "aka porcinis",
     fact: "these meaty mushrooms can grow incredibly large - some specimens weigh over 2 pounds!",
     position: { x: 65, y: 12 },
@@ -47,6 +51,7 @@ const mushrooms: MushroomData[] = [
   {
     variant: "oyster",
     name: "pleurotus ostreatus",
+    titleImage: "/oyster_mushroom_title.png",
     description: "delicate shelf dweller",
     fact: "popular edible mushroom found in temperate and subtropical forests around the world. these look funny :3",
     position: { x: 88, y: 8 },
@@ -55,6 +60,7 @@ const mushrooms: MushroomData[] = [
   {
     variant: "morel",
     name: "Morel",
+    titleImage: "/morel_title.png",
     description: "funny looking things",
     fact: "expensive but yummy mushrooms!",
     position: { x: 18, y: 32 },
@@ -63,6 +69,7 @@ const mushrooms: MushroomData[] = [
   {
     variant: "shimeji",
     name: "beech mushroom",
+    titleImage: "/beech_mushroom_title.png",
     description: "often known as Shimeji or clamshell mushrooms",
     fact: "these mushrooms always grow in groups. they kill in a bibimpbap",
     position: { x: 50, y: 28 },
@@ -71,6 +78,7 @@ const mushrooms: MushroomData[] = [
   {
     variant: "enoki",
     name: "enoki",
+    titleImage: "/enoki_title.png",
     description: "flammulina filiformis",
     fact: "GOATED MUSHROOMS!!! widely cultivated as an edible mushroom in East Asia and kills especially in hotpot",
     position: { x: 78, y: 35 },
@@ -79,6 +87,7 @@ const mushrooms: MushroomData[] = [
   {
     variant: "button",
     name: "button mushroom",
+    titleImage: "/button_mushroom_title.png",
     description: "most common mushroom variety",
     fact: "this humble mushroom is actually the same species as cremini and portobello - just harvested at different stages of growth!",
     position: { x: 5, y: 55 },
@@ -87,6 +96,7 @@ const mushrooms: MushroomData[] = [
   {
     variant: "honey",
     name: "honey fungus",
+    titleImage: "/honey_fungus_title.png",
     description: "the forest giant",
     fact: "one honey fungus in Oregon spans 2,385 acres and is estimated to be 2,400 years old - making it one of the largest organisms on Earth",
     position: { x: 30, y: 52 },
@@ -103,6 +113,7 @@ const mushrooms: MushroomData[] = [
   {
     variant: "parasol",
     name: "parasol mushroom",
+    titleImage: "/parasol_mushroom_title.png",
     description: "macrolepiota procera",
     fact: "found solitary or in groups and fairy rings in pastures and occasionally in woodland",
     position: { x: 85, y: 55 },
@@ -111,6 +122,7 @@ const mushrooms: MushroomData[] = [
   {
     variant: "truffle",
     name: "black truffle",
+    titleImage: "/black_truffle_title.png",
     description: "another yummy mushroom",
     fact: "I just love anything truffle",
     position: { x: 12, y: 75 },
@@ -119,6 +131,7 @@ const mushrooms: MushroomData[] = [
   {
     variant: "button",
     name: "meadow button",
+    titleImage: "/meadow_button_title.png",
     description: "a classic",
     fact: "these mushrooms are grown in more than 70 countries and make up about 40% of all mushrooms consumed globally",
     position: { x: 92, y: 75 },
@@ -127,6 +140,7 @@ const mushrooms: MushroomData[] = [
   {
     variant: "oyster",
     name: "pearl oyster",
+    titleImage: "/pearl_oyster_title.png",
     description: "cascading shelves",
     fact: "they are carnivorous! they can trap and digest tiny roundworms to supplement their nitrogen intake :O",
     position: { x: 25, y: 88 },
@@ -135,6 +149,7 @@ const mushrooms: MushroomData[] = [
   {
     variant: "coral",
     name: "blush cap",
+    titleImage: "/blush_cap_title.png",
     description: "blusher",
     fact: "the flesh of the mushroom is white and turns pink when bruised or exposed to air ^___^ how cute",
     position: { x: 55, y: 92 },
@@ -143,6 +158,7 @@ const mushrooms: MushroomData[] = [
   {
     variant: "amanita",
     name: "horny mushroom",
+    titleImage: "/horny_mushroom_title.png",
     description: "hahahah",
     fact: "hahahahah",
     position: { x: 45, y: 60 },
@@ -152,6 +168,7 @@ const mushrooms: MushroomData[] = [
   {
     variant: "amanita",
     name: "super mushroom",
+    titleImage: "/super_mushroom_title.png",
     description: "makes you big",
     fact: "superrr mario!!!",
     position: { x: 75, y: 85 },
@@ -335,10 +352,10 @@ export default function MushroomGarden() {
                     <div className="space-y-3 p-4 bg-[var(--color-espresso)]/40 rounded-lg backdrop-blur-sm border shadow-xl animate-grow-in text-left">
                     <div className="flex items-start relative">
                       
-                      {mushroom.name === "horny mushroom" ? (
+                      {mushroom.titleImage ? (
                         <img 
-                          src="/horny_mushroom_title.png" 
-                          alt="horny mushroom" 
+                          src={mushroom.titleImage} 
+                          alt={mushroom.name} 
                           className="h-8 w-auto object-contain brightness-0 invert"
                         />
                       ) : (
